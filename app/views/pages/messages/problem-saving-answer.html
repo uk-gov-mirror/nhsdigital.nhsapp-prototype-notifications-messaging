@@ -5,7 +5,7 @@
 {% set backLink = true %}
 {% set backLinkURL = "/pages/messages/message-sending" %}
 
-{% set pageHeading = "There was a problem saving your answer" %}
+{% set pageHeading = "There is a problem saving your answer" %}
 
 {% block content %}
 
@@ -18,8 +18,15 @@
         classes: "nhsuk-u-margin-bottom-5"
       })}}
 
-      <p>This may be a temporary problem. Go back and try again.</p>
-      <p>If the problem cotinues, we'll send a paper copy to your registered address.</p>
+      <p>This may be a temporary problem.</p>
+
+       {{ button({
+        text: "Try again",
+        classes: "nhsapp-button--secondary nhsapp-button",
+        href: "#"
+      }) }}
+
+      <p>If the problem cotinues, we will send you a paper letter.</p>
       <p>You will be able to download the letter in your messages which will allow you to view it offline.</p>
 
        <p> <strong> For urgent medical advice</strong> </p>

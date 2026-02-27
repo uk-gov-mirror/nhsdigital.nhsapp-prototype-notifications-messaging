@@ -2,8 +2,6 @@
 
 {% set hub = "Messages" %}
 
-{% set backLink = true %}
-
 {% set pageHeading = "Letter not found" %}
 
 {% block content %}
@@ -17,7 +15,13 @@
         classes: "nhsuk-u-margin-bottom-5"
       })}}
 
-      <p> There was a problem retriveing your letter. Contact [sender name] to get access to this letter. </p>
+      <p> Contact [sender name] to get this letter. </p>
+
+      {% from "button/macro.njk" import button %}
+{{ button({
+  text: "Return to your message",
+  classes: "nhsuk-button--secondary"
+}) }}
 
 
   <p> <strong> For urgent medical advice</strong> </p>

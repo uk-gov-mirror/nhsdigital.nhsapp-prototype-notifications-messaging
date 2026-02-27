@@ -2,8 +2,6 @@
 
 {% set hub = "Messages" %}
 
-{% set backLink = true %}
-
 {% set pageHeading = "There is a problem showing your letter" %}
 
 {% block content %}
@@ -17,14 +15,15 @@
         classes: "nhsuk-u-margin-bottom-5"
       })}}
 
-      <p>This may be a temporary problem. Try again. </p>
-      <p>If the problem continues contact [sender name] to get access to this letter. </p>
+      <p>This may be a temporary problem.</p>
 
       {{ button({
         text: "Try again",
         classes: "nhsapp-button--secondary nhsapp-button",
         href: "#"
       }) }}
+
+       <p>If the problem continues contact [sender name]. </p>
       
   <p> <strong> For urgent medical advice</strong> </p>
       <p> Use <a href="https://111.nhs.uk" target="_blank" rel="noopener noreferrer" >111 online</a> or <a href= "tel:111">call 111</a> </p>
