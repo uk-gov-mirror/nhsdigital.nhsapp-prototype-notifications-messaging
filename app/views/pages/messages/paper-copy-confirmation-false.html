@@ -22,8 +22,36 @@
         href: "/pages/messages/message-1",
         classes: "nhsuk-u-margin-top-1 nhsapp-button nhsapp-button--secondary"
       }) }}
-
     </div>
+
+ <!-- Responsive text banner — background only behind the text -->
+<style>
+  .app-text-banner { width: 100%; box-sizing: border-box; display: flex; justify-content: center; }
+  .app-text-banner__container { width: 100%; max-width: 100%; display: flex; justify-content: center; box-sizing: border-box; }
+  .app-text-banner__band {
+    background-color: #D2E1EF;
+    width: 100%;
+    max-width: 100%;    
+    height: 72px;       
+    padding: 0 16px;     
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+  }
+</style>
+
+<div class="app-text-banner" role="region" aria-label="Feedback banner">
+  <div class="app-text-banner__container">
+    <div class="app-text-banner__band">
+      <p class="nhsuk-body-s nhsuk-u-margin-bottom-0">
+        Help us improve NHS App Messages and
+        <a href="https://www.nhs.uk/contact-us/nhs-app-contact-us/" target="_blank" rel="noopener noreferrer">give your feedback</a>
+      </p>
+    </div>
+  </div>
+</div>
+
   </div>
 
   {% endblock %}
